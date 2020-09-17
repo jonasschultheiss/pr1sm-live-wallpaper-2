@@ -1,16 +1,16 @@
 'use strict';
 
 let config = {
-  name: 'NAME NOT SET',
+  name : 'NAME NOT SET',
 };
 
 function livelyPropertyListener(name, val) {
   switch (name) {
-    case 'gamertag':
-      config.name = val.toUpperCase();
-      break;
-    default:
-      break;
+  case 'gamertag':
+    config.name = val.toUpperCase();
+    break;
+  default:
+    break;
   }
 
   gg();
