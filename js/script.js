@@ -11,11 +11,12 @@ function livelyPropertyListener(name, val) {
   }
 }
 
-// const gtarr = document.getElementsByClassName('gamertag');
+const gtarr = document.getElementsByClassName('gamertag');
 
-// Array.from(gtar).forEach((e) => {
-//   e.innerHTML = config.name;
-// });
+Array.from(gtarr).forEach((e) => {
+  console.log(e);
+  e.innerHTML = config.name;
+});
 
 const scrolls = document.getElementsByClassName('scrolling');
 const w = window.innerWidth;
