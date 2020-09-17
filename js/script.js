@@ -1,7 +1,7 @@
 'use strict';
 
 let config = {
-  name: 'Name not set',
+  name: 'NAME NOT SET',
 };
 
 function livelyPropertyListener(name, val) {

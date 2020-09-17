@@ -5,7 +5,7 @@
 html,
 body {
   overflow: hidden;
-  background-color: #d0d0d0;
+  background-color: #0e0e0e;
 }
 
 body {
@@ -99,8 +99,7 @@ canvas {
   position: absolute;
   z-index: 10;
   max-width: 48rem;
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.7));
   /* mix-blend-mode: exclusion; */
 }
 
@@ -124,7 +123,7 @@ canvas {
   letter-spacing: 0.025em;
   font-weight: 900;
   font-size: 5rem;
-  color: #333333;
+  color: #d1d1d1;
   width: fit-content;
   display: inline-block;
 }
