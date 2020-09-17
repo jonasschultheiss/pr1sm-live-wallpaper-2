@@ -6,8 +6,3 @@
 2. Download wallpaper.zip in the [latest release](https://github.com/prsm/pr1sm-live-wallpaper/releases)
 3. Drag and drop zip into Lively
 4. Customize wallpaper by right clicking it in Lively
-
-## WebGL Fluid Simulation
-
-Simulation by paveldogreat
-[Play here](https://paveldogreat.github.io/WebGL-Fluid-Simulation/)
