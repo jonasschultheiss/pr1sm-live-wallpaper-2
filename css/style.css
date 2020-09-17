@@ -91,6 +91,7 @@ canvas {
   justify-content: center;
   pointer-events: none;
   font-size: xx-large;
+  padding-top: 2rem;
   /* mix-blend-mode: difference; */
 }
 
@@ -104,7 +105,7 @@ canvas {
 }
 
 .logofont {
-  padding-top: 1rem;
+  margin-bottom: -0.6rem;
   height: 5rem;
   color: #333333;
   fill: currentColor;

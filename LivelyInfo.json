@@ -1,12 +1,12 @@
 {
-  "AppVersion": "0.3.1.0",
-  "Title": "Fluids v2 - PR1SM Edition",
-  "Thumbnail": "fluid.jpg",
-  "Preview": "fluid_preview.gif",
-  "Desc": "Fluid simulation using WebGL, reacts with system audio & cursor.",
-  "Author": "PavelDoGreat, customized by okk",
+  "AppVersion": "0.1",
+  "Title": "PR1SM Slider",
+  "Thumbnail": "thumb.png",
+  "Preview": "thumb.png",
+  "Desc": "sliding pr1sm",
+  "Author": "quest1onmark",
   "License": "MIT",
   "Contact": "https://github.com/prsm/pr1sm-live-wallpaper",
   "Type": 2,
-  "FileName": "fluid.html"
+  "FileName": "index.html"
 }
