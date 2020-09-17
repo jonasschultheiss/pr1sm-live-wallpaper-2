@@ -6,10 +6,15 @@ let config = {
 
 function livelyPropertyListener(name, val) {
   switch (name) {
-    case 'quality':
+    case 'gamertag':
       config.name = val.toUpperCase();
+      break;
+    default:
+      break;
   }
 }
+
+livelyPropertyListener('gamertag', 'quest1');
 
 const gtarr = document.getElementsByClassName('gamertag');
 
