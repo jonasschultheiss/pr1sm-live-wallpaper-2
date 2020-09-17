@@ -12,28 +12,32 @@ function livelyPropertyListener(name, val) {
     default:
       break;
   }
+
+  gg();
 }
 
-livelyPropertyListener('gamertag', 'quest1');
+const gg = () => {
+  const gtarr = document.getElementsByClassName('gamertag');
 
-const gtarr = document.getElementsByClassName('gamertag');
+  Array.from(gtarr).forEach((e) => {
+    console.log(e);
+    e.innerHTML = config.name;
+  });
 
-Array.from(gtarr).forEach((e) => {
-  console.log(e);
-  e.innerHTML = config.name;
-});
+  const scrolls = document.getElementsByClassName('scrolling');
+  const w = window.innerWidth;
 
-const scrolls = document.getElementsByClassName('scrolling');
-const w = window.innerWidth;
+  let children = '';
 
-let children = '';
+  Array.from(scrolls).forEach((e) => {
+    const childw = e.children[0].offsetWidth;
+    for (let i = 0; i < Math.ceil(w / childw) + 1; i++) {
+      children += e.innerHTML;
+    }
 
-Array.from(scrolls).forEach((e) => {
-  const childw = e.children[0].offsetWidth;
-  for (let i = 0; i < Math.ceil(w / childw) + 1; i++) {
-    children += e.innerHTML;
-  }
+    e.innerHTML += children;
+    children = '';
+  });
+};
 
-  e.innerHTML += children;
-  children = '';
-});
+gg();
