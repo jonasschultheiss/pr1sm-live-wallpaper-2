@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
 let config = {
-  name: 'Name not set',
+  name: "NAME NOT SET",
 };
 
 function livelyPropertyListener(name, val) {
   switch (name) {
-    case 'gamertag':
+    case "gamertag":
       config.name = val.toUpperCase();
       break;
     default:
@@ -17,17 +17,17 @@ function livelyPropertyListener(name, val) {
 }
 
 const gg = () => {
-  const gtarr = document.getElementsByClassName('gamertag');
+  const gtarr = document.getElementsByClassName("gamertag");
 
   Array.from(gtarr).forEach((e) => {
     console.log(e);
     e.innerHTML = config.name;
   });
 
-  const scrolls = document.getElementsByClassName('scrolling');
+  const scrolls = document.getElementsByClassName("scrolling");
   const w = window.innerWidth;
 
-  let children = '';
+  let children = "";
 
   Array.from(scrolls).forEach((e) => {
     const childw = e.children[0].offsetWidth;
@@ -36,7 +36,7 @@ const gg = () => {
     }
 
     e.innerHTML += children;
-    children = '';
+    children = "";
   });
 };
 
